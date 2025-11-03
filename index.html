@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Southern Pecan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating background images -->
+  <div class="background-images">
+    <img src="photos/0A18CF9E-D716-42FC-B366-ECCF283A2027_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/03FE1AF3-78E9-44C8-B2AA-35A5107FBF27_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/4FB8D8D9-547E-44E1-99BC-3F3FAAE0B2A9_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/8BD644E8-CE6B-4643-A38D-C741BF4A0425_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/18EA7D6B-0F64-4542-A381-D8130EF9D283_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/228C846B-6297-4038-A7D7-30F87C18E863_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/566FD0EE-A5C2-4422-B64F-7839FC8C9E24_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/631EB592-1967-4069-96BD-DCE64D320AF4_1_102_a.jpeg" class="bg-photo" />
+    <img src="photos/173686A5-D4E0-4EB0-AC76-BB180CDC334F_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/544490A9-02CF-4FB6-93ED-0232E6085707_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/FBC4D6E8-C508-4DA7-A27E-F585F74287C3_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/E09F527C-E944-4979-8D1E-C9C84CACCE97_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/DB9F7D95-3350-46F7-8E18-CC6F1EF68B9C_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/D8A0FEF1-11A4-4A2C-B5EF-FF0DB6F27779_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/D0E85762-602B-4542-8589-97F55DF53C7C_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/D4490210-0A02-4C0A-8D97-9B475642190C_1_105_c.jpeg" class="bg-photo" />
+    <img src="photos/IMG_5849.jpeg" class="bg-photo" />
+    <img src="photos/IMG_2.jpg" class="bg-photo" />
+    <img src="photos/IMG_3.jpg" class="bg-photo" />
+    <img src="photos/IMG_4.jpg" class="bg-photo" />
+    <img src="photos/IMG_5.jpg" class="bg-photo" />
+    <img src="photos/IMG_6.jpg" class="bg-photo" />
+  </div>
+
+  <!-- Main content -->
+  <div class="page-background">
+    <div class="letter">
+      <h1>Southern Pecan</h1>
+
+      <p>
+        I went to live with my grandmother back in 2009, after a pretty bad split between my mom and my then stepdad, the dad of my little brother. 
+        I left the typical, polished suburbs, with paved streets and manicured lawns, a great school system, and infrastructure, for a poor, small town in Mississippi. 
+        Having left the suburbs for somewhere that in a lot of ways seemed like a different world was something that I was not akin to. 
+        We moved to a neighborhood consisting of trailer homes and a blend of small, run-down houses — a place where, instead of perfectly manicured lawns, 
+        non-operational vehicles now littered people's front yards.
+      </p>
+
+      <p>
+        My grandmother was a stern woman; she grew up in that same house that I was now a new resident in. 
+        A house that was full of blues and R&B and has aged alongside her. She was 5'7", had a round nose like me, the same hooded eyes, similar complexion, and the same smile. 
+        I look a lot like her. I look a lot like my mom, who looks a lot like my grandmother. 
+        I relished in the fact that I took after her, the woman who raised me for a considerable chunk of my life. 
+        From having our own rooms and beds to now sharing one, I often wondered why my life became the way it was. 
+        Why couldn’t it be different? I had a lot of anger and contempt toward my grandmother’s house. 
+        However, nonetheless, I loved my grandmother and where my roots hail from.
+      </p>
+
+      <p>
+        Now that I have moved out and am an adult, I have been thinking a lot about grief. 
+        It’s something that we all experience, but we never know when. There is an invisible clock that counts down to when we will face it. 
+        I think about my grandmother, who, although she’s still with us, reminds me that it’s only a matter of when, not if. 
+        The same woman I have inherited my nose, eyes, and way of speaking from.
+      </p>
+
+      <p>
+        She once told me that I look like her mother. I never met her, nor do I know how she looked, but that made me realize that maybe this is how we all live forever. 
+        No one truly dies; they live on in us. 
+        And one day, when I am old and have kids or grandkids, I’ll tell them about my grandmother. 
+        If they are running late, I’ll tell them they’re just like Marilyn Lawston. 
+        If they’re stubborn, unwilling to let things go, or hate to admit they’re wrong, I’ll say the same. 
+        She’s like a pecan, hard on the outside but soft, buttery, and warm in the center. 
+        And when I’m old and want to see my grandma again, I’ll just look in the mirror, and she’ll be staring right back at me, smiling.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.bg-photo');
+
+    function randomizePosition(img) {
+      const top = Math.random() * 80; // keep inside viewport
+      const left = Math.random() * 80;
+      img.style.top = `${top}%`;
+      img.style.left = `${left}%`;
+    }
+
+    images.forEach(img => {
+      randomizePosition(img);
+
+      // give each image a different animation delay
+      const delay = Math.random() * 10;
+      img.style.animationDelay = `${delay}s`;
+
+      // when fade-out finishes (50%), randomize new position
+      img.addEventListener('animationiteration', () => {
+        randomizePosition(img);
+      });
+    });
+  </script>
+</body>
+</html>
