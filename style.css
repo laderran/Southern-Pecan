@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  background-image: url('photos/2966987B-BD0E-42A4-82BA-A51F33CA3350_1_105_c.jpeg'); /* ← change this file name if needed */
+  background-image: url('2966987B-BD0E-42A4-82BA-A51F33CA3350_1_105_c.jpeg'); /* ← change this file name if needed */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
